@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays Paralelos en JavaScript</title>
+</head>
+<body>
+
+<script>
+    // Comentario: Arrays Paralelos en JavaScript
+
+    // Definición de arrays paralelos
+    let profesores = ["Cristina", "Catalina", "Vieites", "Benjamin"];
+    let asignaturas = ["Seguridad", "Bases de Datos", "Sistemas Informáticos", "Redes"];
+    let alumnos = [24, 17, 28, 26];
+
+    // Función para imprimir datos de un índice específico
+    function imprimeDatos(indice) {
+        document.write("<br/>" + profesores[indice] + " del módulo de " + asignaturas[indice] +
+            ", tiene " + alumnos[indice] + " alumnos en clase.");
+    }
+
+    // Recorrido de los arrays paralelos
+    document.write("<strong>Información de Profesores, Asignaturas y Alumnos:</strong><br/>");
+    for (let i = 0; i < profesores.length; i++) {
+        imprimeDatos(i);
+    }
+    
+</script>
+
+</body>
+</html>

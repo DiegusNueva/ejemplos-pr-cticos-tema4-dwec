@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recorrido de un Array en JavaScript</title>
+</head>
+<body>
+
+<script>
+    // Comentario: Recorrido de un array en JavaScript
+
+    // Creación del array del sistema Solar
+    var sistemaSolar = new Array();
+    sistemaSolar[0] = "Mercurio";
+    sistemaSolar[1] = "Venus";
+    sistemaSolar[2] = "Tierra";
+    sistemaSolar[3] = "Marte";
+    sistemaSolar[4] = "Jupiter";
+    sistemaSolar[5] = "Saturno";
+    sistemaSolar[6] = "Urano";
+    sistemaSolar[7] = "Neptuno";
+
+    // Recorrido del array utilizando un bucle for
+    document.write("<strong>Recorrido con bucle for:</strong><br/>");
+    for (var i = 0; i < sistemaSolar.length; i++) {
+        document.write(sistemaSolar[i] + "<br/>");
+    }
+
+    // Recorrido del array utilizando un bucle while
+    document.write("<br/><strong>Recorrido con bucle while:</strong><br/>");
+    var j = 0;
+    while (j < sistemaSolar.length) {
+        document.write(sistemaSolar[j] + "<br/>");
+        j++;
+    }
+
+    // Recorrido del array utilizando for each in (versión de JavaScript 1.6+)
+    document.write("<br/><strong>Recorrido con for each in:</strong><br/>");
+    for each (var planeta in sistemaSolar) {
+        document.write(planeta + "<br/>");
+    }
+
+    // Acceder a una posición no definida en el array
+    document.write("<br/><strong>Acceder a una posición no definida:</strong><br/>");
+    var posicionNoDefinida = sistemaSolar[10]; // Obtendrá undefined
+    document.write("Valor en la posición 10: " + posicionNoDefinida + "<br/>");
+</script>
+
+</body>
+</html>

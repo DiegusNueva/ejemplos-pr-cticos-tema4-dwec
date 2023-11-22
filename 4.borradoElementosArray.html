@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Borrado de Elementos en un Array en JavaScript</title>
+</head>
+<body>
+
+<script>
+    // Comentario: Borrado de elementos en un array en JavaScript
+
+    // Creación del array de océanos
+    var oceanos = new Array("Atlantico", "Pacifico", "Artico", "Indico");
+
+    // Mostrar los océanos antes del borrado
+    document.write("<strong>Océanos antes del borrado:</strong><br/>");
+    for (var i = 0; i < oceanos.length; i++) {
+        document.write(oceanos[i] + "<br/>");
+    }
+
+    // Borrado de un elemento asignándole null
+    oceanos[2] = null;
+
+    // Mostrar los océanos después del borrado con null
+    document.write("<br/><strong>Océanos después del borrado con null:</strong><br/>");
+    for (var j = 0; j < oceanos.length; j++) {
+        document.write(oceanos[j] + "<br/>");
+    }
+
+    // Uso del operador delete para borrar un elemento
+    delete oceanos[1];
+
+    // Mostrar los océanos después del uso del operador delete
+    document.write("<br/><strong>Océanos después del uso de delete:</strong><br/>");
+    for (var k = 0; k < oceanos.length; k++) {
+        document.write(oceanos[k] + "<br/>");
+    }
+
+    // Uso del método splice para eliminar un elemento y ajustar la longitud del array
+    oceanos.splice(2, 1); // Elimina el tercer elemento del array
+
+    // Mostrar los océanos después del uso de splice
+    document.write("<br/><strong>Océanos después del uso de splice:</strong><br/>");
+    for (var l = 0; l < oceanos.length; l++) {
+        document.write(oceanos[l] + "<br/>");
+    }
+</script>
+
+</body>
+</html>

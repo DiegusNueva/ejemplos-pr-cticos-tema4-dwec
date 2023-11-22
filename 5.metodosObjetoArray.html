@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Métodos del Objeto Array en JavaScript</title>
+</head>
+<body>
+
+<script>
+    // Comentario: Métodos del objeto array en JavaScript
+
+    // Ejemplo de algunos métodos del objeto array
+
+    // Método reverse()
+    let frutas = ["Plátano", "Naranja", "Manzana", "Melocotón"];
+    document.write("<strong>Método reverse():</strong><br/>");
+    document.write(frutas.reverse() + "<br/><br/>"); // Imprimirá: Melocotón,Manzana,Naranja,Plátano
+
+    // Método slice()
+    let frutasSlice = ["Plátano", "Naranja", "Manzana", "Melocotón"];
+    document.write("<strong>Método slice():</strong><br/>");
+    document.write(frutasSlice.slice(0, 1) + "<br/>"); // Imprimirá: Plátano
+    document.write(frutasSlice.slice(1) + "<br/>"); // Imprimirá: Naranja,Manzana,Melocotón
+    document.write(frutasSlice.slice(-2) + "<br/>"); // Imprimirá: Manzana,Melocotón
+    document.write(frutasSlice + "<br/>"); // Imprimirá: Plátano,Naranja,Manzana,Melocotón
+</script>
+
+</body>
+</html>
